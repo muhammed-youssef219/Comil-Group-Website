@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comil Group — Phase 2 Shell & Navigation Test</title>
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="bg-navy-50 text-navy-900 min-h-screen flex flex-col font-sans antialiased">
+
+  <!-- Shared Corporate Header (Mount target for layout.js) -->
+  <header id="site-header"></header>
+
+  <!-- Main Content Test Container -->
+  <main id="main-content" class="flex-1 py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto space-y-8">
+
+      <!-- Development Disclaimer Banner -->
+      <div class="p-4 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-start gap-3">
+        <svg class="w-5 h-5 text-amber-600 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+        <div class="text-sm text-navy-800">
+          <p class="font-semibold text-amber-800" data-i18n="testShell.badge">Phase 2 Verification Test Page</p>
+          <p class="text-xs sm:text-sm text-navy-700 mt-0.5" data-i18n="testShell.description">
+            This page verifies Phase 2 requirements: seamless English (LTR) and Arabic (RTL) switching, localStorage persistence, responsive accessible mobile drawer, keyboard focus control, and consistent design tokens. No Phase 3–5 features (catalog, search, quote forms) are active here.
+          </p>
+        </div>
+      </div>
+
+      <!-- Main Test Harness Header -->
+      <div class="border-b border-navy-200 pb-6">
+        <h1 class="text-3xl font-extrabold tracking-tight text-navy-900" data-i18n="testShell.title">
+          Global Shell & Bilingual Navigation Test
+        </h1>
+        <p class="mt-2 text-sm text-navy-600">
+          Commercial Kitchen & Hospitality Equipment — Corporate Website Framework
+        </p>
+      </div>
+
+      <!-- Real-Time Diagnostic State Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <!-- Active Language Card -->
+        <div class="p-5 rounded-lg bg-white border border-navy-200 shadow-sm">
+          <span class="text-xs font-semibold uppercase tracking-wider text-navy-500 block" data-i18n="testShell.currentLangLabel">
+            Active Language:
+          </span>
+          <span id="diagnostic-lang" class="text-2xl font-bold text-navy-900 mt-1 inline-block">
+            en
+          </span>
+          <span class="text-xs text-navy-500 block mt-1">
+            Font: <span id="diagnostic-font" class="font-medium text-navy-700">Plus Jakarta Sans</span>
+          </span>
+        </div>
+
+        <!-- Direction Card -->
+        <div class="p-5 rounded-lg bg-white border border-navy-200 shadow-sm">
+          <span class="text-xs font-semibold uppercase tracking-wider text-navy-500 block" data-i18n="testShell.directionLabel">
+            Layout Direction:
+          </span>
+          <span id="diagnostic-dir" class="text-2xl font-bold text-navy-900 mt-1 inline-block uppercase">
+            ltr
+          </span>
+          <span class="text-xs text-navy-500 block mt-1">
+            Root: <span class="font-mono text-navy-700">&lt;html dir="..."&gt;</span>
+          </span>
+        </div>
+
+        <!-- LocalStorage Card -->
+        <div class="p-5 rounded-lg bg-white border border-navy-200 shadow-sm">
+          <span class="text-xs font-semibold uppercase tracking-wider text-navy-500 block" data-i18n="testShell.storageLabel">
+            localStorage (`comil_preferred_lang`):
+          </span>
+          <span id="diagnostic-storage" class="text-2xl font-bold text-amber-600 mt-1 inline-block font-mono">
+            en
+          </span>
+          <span class="text-xs text-navy-500 block mt-1">
+            Key: <span class="font-mono text-navy-700">comil_preferred_lang</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Interactive Verification Checklist -->
+      <div class="bg-white rounded-lg border border-navy-200 shadow-sm p-6 space-y-4">
+        <h2 class="text-lg font-bold text-navy-900" data-i18n="testShell.instructionsTitle">
+          Verification Checklist
+        </h2>
+        
+        <ul class="space-y-3 text-sm text-navy-700">
+          <li class="flex items-start gap-3">
+            <span class="w-6 h-6 rounded-full bg-navy-100 text-navy-700 font-semibold text-xs flex items-center justify-center shrink-0 mt-0.5">1</span>
+            <span data-i18n="testShell.instruction1">
+              Click the language toggle in the header or drawer. Verify instant LTR/RTL mirror, font change (Plus Jakarta Sans &lt;-&gt; IBM Plex Sans Arabic), and text updates.
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="w-6 h-6 rounded-full bg-navy-100 text-navy-700 font-semibold text-xs flex items-center justify-center shrink-0 mt-0.5">2</span>
+            <span data-i18n="testShell.instruction2">
+              Resize the browser window to mobile width (&lt;1024px) and open the mobile drawer. Verify backdrop click, Escape key close, and focus containment.
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="w-6 h-6 rounded-full bg-navy-100 text-navy-700 font-semibold text-xs flex items-center justify-center shrink-0 mt-0.5">3</span>
+            <span data-i18n="testShell.instruction3">
+              Refresh the page after switching languages. Confirm your selected language is remembered via localStorage.
+            </span>
+          </li>
+        </ul>
+
+        <!-- Action Controls -->
+        <div class="pt-4 border-t border-navy-100 flex flex-wrap items-center gap-3">
+          <button
+            type="button"
+            data-action="toggle-language"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-navy-900 text-white text-sm font-medium hover:bg-navy-800 transition-colors focus-visible:ring-2 focus-visible:ring-amber-500"
+          >
+            <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/>
+            </svg>
+            <span data-i18n="nav.switchLang">Toggle Language</span>
+          </button>
+
+          <button
+            type="button"
+            id="test-clear-storage"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-navy-100 text-navy-800 text-sm font-medium hover:bg-navy-200 transition-colors focus-visible:ring-2 focus-visible:ring-navy-500"
+          >
+            <span>Reset localStorage</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Shared Corporate Footer (Mount target for layout.js) -->
+  <footer id="site-footer"></footer>
+
+  <!-- Main JavaScript Bootstrap -->
+  <script type="module" src="js/main.js"></script>
+
+  <!-- Inline Diagnostic Monitor Script for Phase 2 Verification -->
+  <script type="module">
+    function updateDiagnostics(lang, dir) {
+      const elLang = document.getElementById('diagnostic-lang');
+      const elDir = document.getElementById('diagnostic-dir');
+      const elStorage = document.getElementById('diagnostic-storage');
+      const elFont = document.getElementById('diagnostic-font');
+
+      if (elLang) elLang.textContent = lang;
+      if (elDir) elDir.textContent = dir;
+      if (elStorage) {
+        elStorage.textContent = localStorage.getItem('comil_preferred_lang') || 'null (default en)';
+      }
+      if (elFont) {
+        elFont.textContent = lang === 'ar' ? 'IBM Plex Sans Arabic' : 'Plus Jakarta Sans';
+      }
+    }
+
+    // Listen for language changes dispatched by i18n module
+    document.addEventListener('comil:langchange', (e) => {
+      updateDiagnostics(e.detail.lang, e.detail.dir);
+    });
+
+    // Initial diagnostic sync on load
+    window.addEventListener('DOMContentLoaded', () => {
+      const currentLang = document.documentElement.lang || 'en';
+      const currentDir = document.documentElement.dir || 'ltr';
+      updateDiagnostics(currentLang, currentDir);
+
+      const resetBtn = document.getElementById('test-clear-storage');
+      if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+          localStorage.removeItem('comil_preferred_lang');
+          window.location.reload();
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>

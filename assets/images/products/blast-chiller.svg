@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" role="img" aria-label="Rapid Blast Chiller &amp; Shock Freezer">
+  <defs>
+    <!-- Studio Photography Neutral Gradient Background -->
+    <radialGradient id="studioBg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="65%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </radialGradient>
+    
+    <!-- Brushed Stainless Steel Gradient -->
+    <linearGradient id="steelGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="25%" stop-color="#E2E8F0"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="75%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+
+    <!-- Top Cap Stainless Gradient -->
+    <linearGradient id="steelTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+
+    <!-- Chrome & Polished Steel Reflection -->
+    <linearGradient id="chrome" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#94A3B8"/>
+      <stop offset="35%" stop-color="#FFFFFF"/>
+      <stop offset="65%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+
+    <!-- Dark Metal Chassis -->
+    <linearGradient id="metalDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Precision Control Knob Gradient -->
+    <radialGradient id="knobGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </radialGradient>
+
+    <!-- Amber Brand Highlight -->
+    <linearGradient id="amberAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <!-- Realistic Soft Drop Shadow Filter -->
+    <filter id="shadowBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+
+  <!-- Pure White Studio Background (#FFFFFF) matching real catalog photography -->
+  <rect width="400" height="300" fill="#FFFFFF"/>
+
+  <!-- Product Vector Rendering -->
+  
+      <ellipse cx="200" cy="245" rx="125" ry="12" fill="#0F172A" opacity="0.12"/>
+      <rect x="105" y="45" width="190" height="195" rx="5" fill="url(#steelGrad)" stroke="#64748B" stroke-width="1.5"/>
+      <!-- Heavy Insulated Door with Beveled Rim -->
+      <rect x="115" y="55" width="170" height="175" rx="3" fill="url(#steelGrad)" stroke="#475569" stroke-width="1.5"/>
+      <!-- Upper Control Panel with Graphic Display -->
+      <rect x="125" y="65" width="150" height="40" rx="3" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+      <rect x="135" y="73" width="55" height="24" rx="2" fill="#0284C7"/>
+      <text x="162" y="88" fill="#FFFFFF" font-size="10" font-weight="700" text-anchor="middle" font-family="monospace">-18°C</text>
+      <text x="230" y="82" fill="#94A3B8" font-size="7" font-weight="600" text-anchor="middle">HARD FREEZE</text>
+      <text x="230" y="94" fill="#38BDF8" font-size="8" font-weight="700" text-anchor="middle">CYCLE 01:24</text>
+
+      <!-- Center Logo & Core Probe Housing -->
+      <circle cx="200" cy="140" r="14" fill="#0F172A" stroke="#D97706" stroke-width="2"/>
+      <path d="M195,140 L205,140 M200,135 L200,145" stroke="#F59E0B" stroke-width="2"/>
+      <!-- Massive Ergonomic Latch Handle -->
+      <rect x="265" y="115" width="10" height="65" rx="4" fill="url(#chrome)" stroke="#334155" stroke-width="1"/>
+      <circle cx="270" cy="147" r="3" fill="#475569"/>
+      <!-- Legs -->
+      <rect x="120" y="240" width="16" height="12" rx="2" fill="url(#steelTop)"/>
+      <rect x="264" y="240" width="16" height="12" rx="2" fill="url(#steelTop)"/>
+    
+</svg>

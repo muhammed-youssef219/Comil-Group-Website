@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" role="img" aria-label="Commercial Ice Maker (150kg/24h)">
+  <defs>
+    <!-- Studio Photography Neutral Gradient Background -->
+    <radialGradient id="studioBg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="65%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </radialGradient>
+    
+    <!-- Brushed Stainless Steel Gradient -->
+    <linearGradient id="steelGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="25%" stop-color="#E2E8F0"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="75%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+
+    <!-- Top Cap Stainless Gradient -->
+    <linearGradient id="steelTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+
+    <!-- Chrome & Polished Steel Reflection -->
+    <linearGradient id="chrome" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#94A3B8"/>
+      <stop offset="35%" stop-color="#FFFFFF"/>
+      <stop offset="65%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+
+    <!-- Dark Metal Chassis -->
+    <linearGradient id="metalDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Precision Control Knob Gradient -->
+    <radialGradient id="knobGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </radialGradient>
+
+    <!-- Amber Brand Highlight -->
+    <linearGradient id="amberAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <!-- Realistic Soft Drop Shadow Filter -->
+    <filter id="shadowBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+
+  <!-- Pure White Studio Background (#FFFFFF) matching real catalog photography -->
+  <rect width="400" height="300" fill="#FFFFFF"/>
+
+  <!-- Product Vector Rendering -->
+  
+      <ellipse cx="200" cy="245" rx="120" ry="12" fill="#0F172A" opacity="0.12"/>
+      <rect x="115" y="55" width="170" height="180" rx="4" fill="url(#steelGrad)" stroke="#64748B" stroke-width="1.5"/>
+      
+      <!-- Upper Ice Evaporator & Compressor Section -->
+      <rect x="122" y="62" width="156" height="55" rx="2" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <!-- Front Air Ventilation Louvers -->
+      <g stroke="#64748B" stroke-width="1.5">
+        <line x1="130" y1="75" x2="210" y2="75"/>
+        <line x1="130" y1="83" x2="210" y2="83"/>
+        <line x1="130" y1="91" x2="210" y2="91"/>
+        <line x1="130" y1="99" x2="210" y2="99"/>
+      </g>
+      <!-- Power Indicator & Clean Cycle LED -->
+      <circle cx="240" cy="80" r="4" fill="#10B981"/>
+      <circle cx="258" cy="80" r="4" fill="#38BDF8"/>
+      <text x="249" y="95" fill="#94A3B8" font-size="6" text-anchor="middle" font-family="sans-serif">READY</text>
+
+      <!-- Lower Insulated Storage Bin Door (Curved Disappearing Door) -->
+      <path d="M122,125 C122,125 150,130 200,130 C250,130 278,125 278,125 L278,225 L122,225 Z" fill="url(#steelGrad)" stroke="#475569" stroke-width="1.5"/>
+      <!-- Curved Door Lip Handle -->
+      <rect x="150" y="145" width="100" height="8" rx="4" fill="#1E293B"/>
+
+      <!-- Legs -->
+      <rect x="125" y="238" width="14" height="10" rx="2" fill="url(#steelTop)"/>
+      <rect x="261" y="238" width="14" height="10" rx="2" fill="url(#steelTop)"/>
+    
+</svg>

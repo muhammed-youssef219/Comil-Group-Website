@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" role="img" aria-label="Pass-Through Hood Dishwasher">
+  <defs>
+    <!-- Studio Photography Neutral Gradient Background -->
+    <radialGradient id="studioBg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="65%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </radialGradient>
+    
+    <!-- Brushed Stainless Steel Gradient -->
+    <linearGradient id="steelGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="25%" stop-color="#E2E8F0"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="75%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+
+    <!-- Top Cap Stainless Gradient -->
+    <linearGradient id="steelTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+
+    <!-- Chrome & Polished Steel Reflection -->
+    <linearGradient id="chrome" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#94A3B8"/>
+      <stop offset="35%" stop-color="#FFFFFF"/>
+      <stop offset="65%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+
+    <!-- Dark Metal Chassis -->
+    <linearGradient id="metalDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Precision Control Knob Gradient -->
+    <radialGradient id="knobGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </radialGradient>
+
+    <!-- Amber Brand Highlight -->
+    <linearGradient id="amberAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <!-- Realistic Soft Drop Shadow Filter -->
+    <filter id="shadowBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+
+  <!-- Pure White Studio Background (#FFFFFF) matching real catalog photography -->
+  <rect width="400" height="300" fill="#FFFFFF"/>
+
+  <!-- Product Vector Rendering -->
+  
+      <ellipse cx="200" cy="248" rx="125" ry="12" fill="#0F172A" opacity="0.12"/>
+      <!-- Lower Wash Tank & Base -->
+      <rect x="110" y="130" width="180" height="105" rx="3" fill="url(#steelGrad)" stroke="#475569" stroke-width="1.5"/>
+      <!-- Control Panel -->
+      <rect x="120" y="140" width="160" height="24" rx="2" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+      <!-- Digital Wash / Rinse Temp Display -->
+      <text x="145" y="156" fill="#10B981" font-size="9" font-weight="700" font-family="monospace">65°C</text>
+      <text x="180" y="156" fill="#38BDF8" font-size="9" font-weight="700" font-family="monospace">85°C</text>
+      <circle cx="250" cy="152" r="6" fill="#D97706" stroke="#FEF3C7" stroke-width="1"/>
+
+      <!-- Sliding Counterbalanced Upper Hood -->
+      <rect x="105" y="55" width="190" height="75" rx="3" fill="url(#steelTop)" stroke="#475569" stroke-width="1.5"/>
+      <!-- Full Perimeter Lift Handle Bar -->
+      <path d="M95,110 L95,60 L305,60 L305,110" fill="none" stroke="url(#chrome)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- Wash Rack Preview Inside -->
+      <rect x="125" y="118" width="150" height="14" fill="#0F172A" opacity="0.5"/>
+      <line x1="130" y1="125" x2="270" y2="125" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4,4"/>
+
+      <!-- Legs -->
+      <rect x="120" y="235" width="16" height="12" rx="2" fill="url(#steelTop)"/>
+      <rect x="264" y="235" width="16" height="12" rx="2" fill="url(#steelTop)"/>
+    
+</svg>

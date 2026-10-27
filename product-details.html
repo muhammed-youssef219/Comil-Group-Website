@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipment Details — Comil Group | Commercial Kitchen & Hospitality Equipment</title>
+  <meta name="description" content="View commercial specifications, technical data, and procurement options for Comil Group professional kitchen equipment.">
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="bg-navy-50 text-navy-900 min-h-screen flex flex-col font-sans antialiased selection:bg-amber-500 selection:text-white">
+
+  <!-- Shared Corporate Header (Hydrated by layout.js) -->
+  <header id="site-header"></header>
+
+  <!-- Main Details Page Wrapper -->
+  <main id="main-content" class="flex-1 py-6 sm:py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full space-y-10">
+
+    <!-- Active Product Details State -->
+    <div id="product-details-content" class="space-y-10">
+      
+      <!-- Breadcrumb Navigation -->
+      <nav class="flex items-center gap-2 text-xs font-medium text-navy-500 overflow-x-auto pb-1" aria-label="Breadcrumb">
+        <a href="index.html" class="hover:text-amber-600 transition-colors whitespace-nowrap" data-i18n="productDetails.breadcrumbHome">Home</a>
+        <svg class="w-3.5 h-3.5 text-navy-400 rtl-flip shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+        <a href="products.html" class="hover:text-amber-600 transition-colors whitespace-nowrap" data-i18n="productDetails.breadcrumbCatalog">Products Catalog</a>
+        <svg class="w-3.5 h-3.5 text-navy-400 rtl-flip shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+        <a href="products.html" id="detail-breadcrumb-cat" class="hover:text-amber-600 transition-colors whitespace-nowrap"></a>
+        <svg class="w-3.5 h-3.5 text-navy-400 rtl-flip shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+        <span id="detail-breadcrumb-current" class="text-navy-900 font-bold truncate max-w-[220px] sm:max-w-none" aria-current="page"></span>
+      </nav>
+
+      <!-- Primary Showcase: 2-Column Product Stage -->
+      <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start" aria-label="Product Showcase">
+        
+        <!-- Left Column: High-Resolution Studio Photography Display (lg:col-span-6) -->
+        <div class="lg:col-span-6 space-y-4">
+          <div class="bg-white rounded-2xl border border-navy-200/90 shadow-sm p-4 sm:p-10 relative overflow-hidden flex flex-col items-center justify-center min-h-[280px] sm:min-h-[440px] group">
+            
+            <!-- Category Badge (Top Start) -->
+            <span id="detail-cat-badge" class="absolute top-3 sm:top-4 start-3 sm:start-4 px-2.5 sm:px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-navy-100 text-navy-800 border border-navy-200"></span>
+
+            <!-- SKU Badge (Top End) -->
+            <span id="detail-sku-badge" class="absolute top-3 sm:top-4 end-3 sm:top-4 px-2 sm:px-2.5 py-1 rounded font-mono text-[11px] sm:text-xs font-bold bg-navy-950 text-amber-400 shadow-sm"></span>
+
+            <!-- Main Product Graphic -->
+            <img
+              id="detail-main-img"
+              src=""
+              alt=""
+              class="max-h-[220px] sm:max-h-[380px] w-auto max-w-full object-contain filter drop-shadow-md group-hover:scale-105 transition-transform duration-300"
+              loading="eager"
+            >
+
+            <!-- Bottom Quality Assurance Pills -->
+            <div class="absolute bottom-3 sm:bottom-4 inset-x-3 sm:inset-x-4 flex items-center justify-between text-[10px] sm:text-[11px] font-semibold text-navy-500 border-t border-navy-100/80 pt-2.5 sm:pt-3">
+              <span class="inline-flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span data-i18n="catalog.assuranceGrade">AISI 304 Stainless Steel</span>
+              </span>
+              <span class="text-amber-600 font-bold uppercase tracking-wider text-[10px]" data-i18n="catalog.demoBadge">
+                Demo Model
+              </span>
+            </div>
+
+          </div>
+
+          <!-- Showcase Support Notice -->
+          <div class="p-3 sm:p-3.5 rounded-lg bg-navy-100/60 border border-navy-200 text-xs text-navy-700 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3">
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-amber-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span data-i18n="productDetails.inStockDemo">Demonstration Model Available for Inspection</span>
+            </div>
+            <button
+              type="button"
+              id="detail-download-spec-btn"
+              class="inline-flex items-center gap-1 text-[11px] font-bold text-navy-800 hover:text-amber-700 transition-colors self-start sm:self-auto cursor-pointer"
+              data-i18n="productDetails.downloadSpecs"
+            >
+              <svg class="w-3.5 h-3.5 text-navy-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+              <span>Spec Sheet (PDF)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Column: Commercial Product Information & Actions (lg:col-span-6) -->
+        <div class="lg:col-span-6 space-y-6">
+          
+          <div class="space-y-3">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-xs font-bold text-amber-800">
+              <span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>
+              <span>Comil Commercial Series</span>
+            </div>
+
+            <!-- Product Title -->
+            <h1 id="detail-product-name" class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy-950 tracking-tight leading-snug"></h1>
+
+            <!-- SKU Sub-bar -->
+            <div class="flex items-center gap-3 text-xs text-navy-500">
+              <span data-i18n="productDetails.skuPrefix">Model SKU:</span>
+              <span id="detail-sku-text" class="font-mono font-bold text-navy-800"></span>
+              <span class="text-navy-300">•</span>
+              <span id="detail-cat-text" class="font-semibold text-navy-700"></span>
+            </div>
+          </div>
+
+          <!-- Product Short Description -->
+          <div class="prose prose-sm text-navy-700 leading-relaxed border-t border-b border-navy-200/80 py-4">
+            <p id="detail-product-desc" class="text-sm sm:text-base leading-relaxed text-navy-700"></p>
+          </div>
+
+          <!-- Quick Glance Specs Matrix (2x2 Grid) -->
+          <div class="space-y-2.5">
+            <h3 class="text-xs font-bold text-navy-900 uppercase tracking-wider" data-i18n="productDetails.specificationsTitle">
+              Key Engineering Parameters
+            </h3>
+            <div id="detail-quick-specs" class="grid grid-cols-2 gap-3">
+              <!-- Dynamically rendered via productDetails.js -->
+            </div>
+          </div>
+
+          <!-- B2B Commercial Actions Box -->
+          <div class="bg-white rounded-xl border border-navy-200 p-5 shadow-sm space-y-4">
+            
+            <!-- Quantity Selection -->
+            <div class="flex items-center justify-between gap-4">
+              <label for="detail-quantity-select" class="text-xs font-bold text-navy-800" data-i18n="productDetails.quantityLabel">
+                Quantity for Quotation:
+              </label>
+              <select
+                id="detail-quantity-select"
+                class="py-1.5 px-3 rounded-md border border-navy-300 text-xs sm:text-sm font-semibold text-navy-900 bg-navy-50/50 focus:outline-none focus:ring-2 focus:ring-amber-500"
+              >
+                <option value="1">1 Unit</option>
+                <option value="2">2 Units</option>
+                <option value="3-5">3 – 5 Units (Facility Order)</option>
+                <option value="5-10">5 – 10 Units (Project Fit-out)</option>
+                <option value="10+">10+ Units (Turnkey Hospitality)</option>
+              </select>
+            </div>
+
+            <!-- Primary CTAs -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+              <!-- Request Quotation Button -->
+              <button
+                type="button"
+                id="detail-quote-btn"
+                class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-sm shadow-sm transition-all duration-150 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-500"
+                data-i18n="productDetails.requestQuoteBtn"
+              >
+                <svg class="w-4 h-4 rtl-flip shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                <span>Request Commercial Quote</span>
+              </button>
+
+              <!-- Add to Cart Button -->
+              <button
+                type="button"
+                id="detail-add-cart-btn"
+                class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-navy-900 hover:bg-navy-800 text-white font-semibold text-sm transition-all duration-150 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-amber-500 shadow-sm active:scale-95"
+                data-i18n="productDetails.addToCartBtn"
+              >
+                <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                <span>Add to Quotation Cart</span>
+              </button>
+            </div>
+
+            <!-- Commercial Procurement Assurance -->
+            <p class="text-[11px] text-navy-500 text-center leading-normal font-medium">
+              * عروض أسعار تجارية مباشرة ومعتمدة للشركات مع توافر الدعم الفني وضمان الوكيل المعتمد.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Technical Specifications Full Table -->
+      <section class="bg-white rounded-2xl border border-navy-200/90 shadow-sm p-6 sm:p-8 space-y-6" aria-labelledby="specs-heading">
+        <div class="border-b border-navy-100 pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div>
+            <h2 id="specs-heading" class="text-xl font-bold text-navy-900" data-i18n="productDetails.specificationsTitle">
+              Engineering & Technical Specifications
+            </h2>
+            <p class="text-xs text-navy-500 mt-0.5">
+              Verified commercial parameters for commercial kitchen fit-out planning and utility connection.
+            </p>
+          </div>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-semibold bg-navy-50 text-navy-700 border border-navy-200 self-start sm:self-auto">
+            <svg class="w-3.5 h-3.5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span data-i18n="productDetails.commercialGrade">AISI 304 Stainless Steel</span>
+          </span>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left rtl:text-right border-collapse text-xs sm:text-sm">
+            <tbody id="detail-specs-table-body" class="divide-y divide-navy-100">
+              <!-- Injected dynamically via productDetails.js -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Related Equipment Section (5 Columns matching products.html) -->
+      <section class="space-y-6 pt-4 border-t border-navy-200/80" aria-labelledby="related-heading">
+        <div class="flex items-center justify-between">
+          <div>
+            <h2 id="related-heading" class="text-xl sm:text-2xl font-bold text-navy-900" data-i18n="productDetails.relatedTitle">
+              Related Commercial Equipment
+            </h2>
+            <p class="text-xs text-navy-500 mt-0.5">
+              Explore complementary equipment models in the same commercial category.
+            </p>
+          </div>
+          <a
+            href="products.html"
+            class="text-xs sm:text-sm font-semibold text-amber-600 hover:text-amber-700 transition-colors inline-flex items-center gap-1"
+            data-i18n="productDetails.backToCatalog"
+          >
+            <span>View All</span>
+            <svg class="w-4 h-4 rtl-flip" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- 5-Column Grid for Related Products -->
+        <div id="detail-related-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3.5 sm:gap-4 lg:gap-5">
+          <!-- Injected dynamically via productDetails.js -->
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Product Not Found Fallback Container (Hidden by default) -->
+    <div id="detail-not-found" class="hidden bg-white rounded-2xl border border-navy-200/90 p-12 text-center max-w-lg mx-auto shadow-sm space-y-5 my-12">
+      <div class="w-16 h-16 rounded-full bg-navy-50 text-navy-400 mx-auto flex items-center justify-center">
+        <svg class="w-8 h-8 text-navy-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+      </div>
+      <h2 class="text-2xl font-bold text-navy-900" data-i18n="productDetails.notFoundTitle">
+        Equipment Model Not Found
+      </h2>
+      <p class="text-sm text-navy-600 leading-relaxed" data-i18n="productDetails.notFoundDesc">
+        The requested commercial equipment model does not exist or has been relocated. Please check our catalog to view available machinery.
+      </p>
+      <div class="pt-2">
+        <a
+          href="products.html"
+          class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-navy-900 hover:bg-navy-800 text-white text-sm font-semibold transition-colors focus-visible:ring-2 focus-visible:ring-amber-500 shadow-sm"
+          data-i18n="productDetails.backToCatalog"
+        >
+          Return to Equipment Catalog
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Commercial Quotation Request Modal -->
+  <div
+    id="quote-modal-backdrop"
+    class="fixed inset-0 bg-navy-950/75 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-6 transition-opacity duration-300 opacity-0 pointer-events-none"
+    aria-hidden="true"
+  >
+    <div
+      id="quote-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="quote-modal-title"
+      class="bg-white rounded-2xl shadow-2xl max-w-xl w-full max-h-[92vh] flex flex-col overflow-hidden border border-navy-200 transform transition-transform duration-300 scale-95 my-auto"
+    >
+      <!-- Modal Header (Fixed at top) -->
+      <div class="bg-navy-900 text-white p-4 sm:p-5 flex items-center justify-between gap-4 shrink-0 border-b border-navy-800">
+        <div class="space-y-0.5 min-w-0">
+          <h2 id="quote-modal-title" class="text-lg sm:text-xl font-extrabold text-white leading-tight" data-i18n="catalog.modalTitle">
+            طلب عرض أسعار تجاري
+          </h2>
+          <p class="text-xs text-navy-300 truncate sm:text-wrap" data-i18n="catalog.modalSubtitle">
+            أرسل استفسارك لتوريد المعدات والمواصفات الفنية للمشاريع وعروض الأسعار للشركات.
+          </p>
+        </div>
+
+        <!-- Prominent White X Close Button -->
+        <button
+          type="button"
+          id="quote-modal-close"
+          data-i18n-aria="catalog.dismiss"
+          aria-label="إغلاق"
+          title="إغلاق النافذة"
+          class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 active:scale-95 text-white flex items-center justify-center transition-all shrink-0 cursor-pointer focus-visible:ring-2 focus-visible:ring-amber-400"
+        >
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Pre-Selected Equipment Banner (Scrollable list if multiple items) -->
+      <div class="bg-slate-50 px-4 sm:px-5 py-3 border-b border-slate-200/90 flex items-start justify-between gap-3 text-xs shrink-0">
+        <div class="min-w-0 flex-1">
+          <span class="text-navy-500 font-semibold block mb-0.5" data-i18n="catalog.modalProductLabel">المعدة المحددة:</span>
+          <div id="quote-modal-product-name" class="font-bold text-navy-950 text-xs sm:text-sm max-h-20 overflow-y-auto leading-relaxed pr-1"></div>
+        </div>
+        <span id="quote-modal-product-sku" class="px-2 py-1 rounded bg-navy-100 font-mono font-bold text-navy-800 text-[11px] shrink-0 self-start"></span>
+      </div>
+
+      <!-- Quotation Request Form Container with Pinned Bottom Action Bar -->
+      <form id="quote-modal-form" class="flex flex-col flex-1 min-h-0 overflow-hidden">
+        <!-- Scrollable Inputs Area -->
+        <div id="quote-modal-body" class="p-4 sm:p-5 space-y-3 sm:space-y-3.5 overflow-y-auto flex-1">
+          <div>
+            <label for="quote-company-name" class="block text-xs font-bold text-navy-800 mb-1" data-i18n="catalog.modalCompanyLabel">
+              اسم الشركة أو المؤسسة
+            </label>
+            <input
+              type="text"
+              id="quote-company-name"
+              required
+              data-i18n-placeholder="catalog.modalCompanyPlaceholder"
+              placeholder="مثال: فندق قصر الضيافة، شركة النور للإعاشة"
+              class="w-full px-3.5 py-2.5 text-sm bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 focus:outline-none transition-colors"
+            >
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label for="quote-contact-email" class="block text-xs font-bold text-navy-800 mb-1" data-i18n="catalog.modalContactLabel">
+                البريد الإلكتروني للعمل
+              </label>
+              <input
+                type="email"
+                id="quote-contact-email"
+                required
+                placeholder="procurement@company.com"
+                class="w-full px-3.5 py-2.5 text-sm bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 focus:outline-none transition-colors"
+              >
+            </div>
+            <div>
+              <label for="quote-contact-phone" class="block text-xs font-bold text-navy-800 mb-1" data-i18n="catalog.modalPhoneLabel">
+                رقم الهاتف / واتساب
+              </label>
+              <input
+                type="tel"
+                id="quote-contact-phone"
+                placeholder="+20 123 456 7890"
+                class="w-full px-3.5 py-2.5 text-sm bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 focus:outline-none transition-colors"
+              >
+            </div>
+          </div>
+
+          <div>
+            <label for="quote-quantity" class="block text-xs font-bold text-navy-800 mb-1" data-i18n="catalog.modalQtyLabel">
+              الكمية التقديرية
+            </label>
+            <select
+              id="quote-quantity"
+              class="w-full px-3.5 py-2.5 text-sm bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 focus:outline-none transition-colors"
+            >
+              <option value="1">1 Unit (Individual Model)</option>
+              <option value="2-4">2 – 4 Units (Small/Medium Project)</option>
+              <option value="5-10">5 – 10 Units (Commercial Facility)</option>
+              <option value="10+">10+ Units (Turnkey Hospitality Fit-out)</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="quote-notes" class="block text-xs font-bold text-navy-800 mb-1" data-i18n="catalog.modalNotesLabel">
+              متطلبات المشروع وملاحظات التركيب
+            </label>
+            <textarea
+              id="quote-notes"
+              rows="2"
+              data-i18n-placeholder="catalog.modalNotesPlaceholder"
+              placeholder="حدد متطلبات الجهد الكهربائي، الأبعاد في الموقع، أو الجدول الزمني..."
+              class="w-full px-3.5 py-2.5 text-sm bg-white border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 focus:outline-none transition-colors resize-none"
+            ></textarea>
+          </div>
+
+          <div id="quote-form-error" class="hidden text-xs font-bold text-red-600 bg-red-50 p-2.5 rounded-lg border border-red-200" data-i18n="catalog.validationError">
+            يرجى إدخال اسم الشركة وبريد إلكتروني صالح للعمل.
+          </div>
+        </div>
+
+        <!-- Pinned Sticky Actions Footer - Guaranteed 100% visible on all viewports -->
+        <div class="bg-slate-50 p-3.5 sm:p-4 border-t border-slate-200 shrink-0 space-y-2">
+          <button
+            type="submit"
+            class="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-amber-600 hover:bg-amber-700 active:scale-[0.98] text-white font-bold text-sm sm:text-base shadow-md transition-all duration-150 focus-visible:ring-4 focus-visible:ring-amber-400 cursor-pointer"
+            data-i18n="catalog.modalSubmitBtn"
+          >
+            <svg class="w-5 h-5 rtl-flip shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+            <span>إرسال طلب عرض الأسعار التجاري</span>
+          </button>
+
+          <!-- Bottom Cancel / Close button -->
+          <button
+            type="button"
+            id="quote-modal-cancel-btn"
+            class="w-full text-center text-xs font-semibold text-navy-500 hover:text-navy-900 transition-colors py-0.5 cursor-pointer"
+          >
+            ← إلغاء والعودة إلى المتجر
+          </button>
+        </div>
+      </form>
+
+      <!-- Success Confirmation State (Hidden until submission) -->
+      <div id="quote-modal-success" class="hidden p-8 text-center space-y-4 my-auto">
+        <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto shadow-sm">
+          <svg class="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-extrabold text-navy-950" data-i18n="catalog.modalSuccessTitle">
+          تم إرسال طلب عرض الأسعار بنجاح
+        </h3>
+        <p class="text-xs sm:text-sm text-navy-600 leading-relaxed max-w-sm mx-auto font-medium" data-i18n="catalog.modalSuccessMsg">
+          شكراً لتواصلكم مع مجموعة كوميل. تم تسجيل استفساركم التجاري وسيقوم فريق المشاريع والمبيعات بالتواصل معكم عبر البريد أو الهاتف لتزويدكم بالمقايسة والأسعار المعتمدة.
+        </p>
+        <div class="pt-3">
+          <button
+            type="button"
+            id="quote-modal-success-close"
+            class="px-8 py-3 rounded-xl bg-navy-900 text-white text-sm font-bold hover:bg-navy-800 active:scale-95 transition-all shadow-md focus-visible:ring-2 focus-visible:ring-amber-500 cursor-pointer"
+            data-i18n="catalog.modalCloseBtn"
+          >
+            إغلاق
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Floating Quick Contact Widget (WhatsApp & Phone) -->
+  <aside
+    class="fixed left-0 top-1/2 -translate-y-1/2 z-40 flex flex-col items-center bg-navy-950/95 backdrop-blur-md rounded-r-xl p-1 sm:p-1.5 shadow-2xl border-y border-r border-white/20 space-y-1.5 sm:space-y-2 group"
+    aria-label="Quick Contact Channels"
+  >
+    <!-- Toggle / Arrow Indicator -->
+    <div class="text-white/60 text-xs py-0.5 hidden sm:block" aria-hidden="true">
+      <svg class="w-3.5 h-3.5 rtl-flip" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/>
+      </svg>
+    </div>
+
+    <!-- WhatsApp Quick Contact -->
+    <a
+      href="https://wa.me/201283896661"
+      target="_blank"
+      rel="noopener noreferrer"
+      data-i18n-title="sectorsSection.floatingContact.whatsapp"
+      aria-label="WhatsApp"
+      class="w-9 h-9 sm:w-11 sm:h-11 rounded-lg bg-[#25D366] hover:bg-[#20ba59] text-white flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-lg focus-visible:ring-2 focus-visible:ring-emerald-400"
+    >
+      <svg class="w-4 h-4 sm:w-6 sm:h-6 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.978-.276-.1-.477-.15-.678.15-.2.3-.778.978-.954 1.179-.176.2-.351.226-.652.075s-1.272-.469-2.423-1.496c-.896-.799-1.501-1.787-1.677-2.088-.176-.3-.019-.462.132-.612.136-.135.301-.351.452-.527.15-.176.2-.301.301-.502.1-.2.05-.376-.025-.527-.075-.15-.678-1.633-.929-2.235-.245-.586-.494-.506-.678-.515-.175-.009-.376-.011-.577-.011s-.527.075-.803.376c-.276.301-1.054 1.03-1.054 2.511 0 1.481 1.079 2.912 1.229 3.113.15.201 2.124 3.243 5.145 4.548.719.311 1.28.497 1.718.636.723.23 1.381.198 1.901.12.579-.087 1.78-.727 2.031-1.43.251-.703.251-1.306.176-1.43-.075-.125-.276-.201-.577-.351zM12.042 2C6.502 2 2.008 6.494 2.008 12.034c0 1.768.461 3.493 1.338 5.014l-1.42 5.187 5.318-1.395c1.464.798 3.119 1.228 4.798 1.228h.004c5.539 0 10.033-4.494 10.033-10.034 0-2.68-1.043-5.199-2.939-7.095C17.245 3.043 14.726 2 12.042 2zm0 18.375h-.003c-1.498 0-2.966-.403-4.246-1.163l-.305-.181-3.159.829.843-3.078-.198-.316c-.836-1.33-1.278-2.879-1.278-4.432 0-4.622 3.76-8.382 8.386-8.382 2.24 0 4.347.873 5.932 2.458 1.585 1.585 2.458 3.693 2.458 5.933 0 4.623-3.76 8.383-8.389 8.383z"/>
+      </svg>
+    </a>
+
+    <!-- Phone Call Quick Contact -->
+    <a
+      href="tel:+201283896661"
+      data-i18n-title="sectorsSection.floatingContact.phone"
+      aria-label="Direct Phone Call"
+      class="w-9 h-9 sm:w-11 sm:h-11 rounded-lg bg-black hover:bg-navy-800 text-white flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-lg focus-visible:ring-2 focus-visible:ring-amber-400"
+    >
+      <svg class="w-4 h-4 sm:w-6 sm:h-6 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+      </svg>
+    </a>
+  </aside>
+
+  <!-- Shared Corporate Footer (Hydrated by layout.js) -->
+  <footer id="site-footer"></footer>
+
+  <!-- Main JavaScript Bootstrap -->
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "comil-group-website",
+  "version": "1.0.0",
+  "description": "Comil Group - Front-End B2B Commercial Kitchen & Hospitality Equipment Website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:css": "tailwindcss -i ./css/input.css -o ./css/output.css --watch",
+    "build:css": "tailwindcss -i ./css/input.css -o ./css/output.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" role="img" aria-label="Industrial Spiral Dough Mixer">
+  <defs>
+    <!-- Studio Photography Neutral Gradient Background -->
+    <radialGradient id="studioBg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="65%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </radialGradient>
+    
+    <!-- Brushed Stainless Steel Gradient -->
+    <linearGradient id="steelGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="25%" stop-color="#E2E8F0"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="75%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+
+    <!-- Top Cap Stainless Gradient -->
+    <linearGradient id="steelTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+
+    <!-- Chrome & Polished Steel Reflection -->
+    <linearGradient id="chrome" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#94A3B8"/>
+      <stop offset="35%" stop-color="#FFFFFF"/>
+      <stop offset="65%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+
+    <!-- Dark Metal Chassis -->
+    <linearGradient id="metalDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Precision Control Knob Gradient -->
+    <radialGradient id="knobGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </radialGradient>
+
+    <!-- Amber Brand Highlight -->
+    <linearGradient id="amberAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <!-- Realistic Soft Drop Shadow Filter -->
+    <filter id="shadowBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+
+  <!-- Pure White Studio Background (#FFFFFF) matching real catalog photography -->
+  <rect width="400" height="300" fill="#FFFFFF"/>
+
+  <!-- Product Vector Rendering -->
+  
+      <ellipse cx="200" cy="245" rx="120" ry="12" fill="#0F172A" opacity="0.12"/>
+      <!-- Column Body -->
+      <path d="M125,235 L275,235 L260,85 L140,85 Z" fill="url(#steelGrad)" stroke="#475569" stroke-width="1.5"/>
+      <!-- Top Head Structure -->
+      <rect x="135" y="45" width="130" height="42" rx="5" fill="url(#steelTop)" stroke="#334155" stroke-width="1.5"/>
+      <!-- Dual Digital Timers -->
+      <rect x="150" y="54" width="35" height="16" rx="2" fill="#0F172A"/>
+      <text x="167" y="66" fill="#10B981" font-size="8" font-weight="700" text-anchor="middle" font-family="monospace">04:00</text>
+      <rect x="195" y="54" width="35" height="16" rx="2" fill="#0F172A"/>
+      <text x="212" y="66" fill="#F59E0B" font-size="8" font-weight="700" text-anchor="middle" font-family="monospace">08:00</text>
+      <!-- Emergency Stop Button -->
+      <circle cx="248" cy="62" r="7" fill="#DC2626" stroke="#991B1B" stroke-width="1"/>
+
+      <!-- Heavy Stainless Steel Rotating Bowl -->
+      <path d="M140,120 C140,215 260,215 260,120 Z" fill="url(#chrome)" stroke="#334155" stroke-width="1.5"/>
+      <ellipse cx="200" cy="120" rx="60" ry="14" fill="url(#steelTop)" stroke="#475569" stroke-width="1.5"/>
+      <!-- Spiral Tool Graphic Inside Bowl -->
+      <path d="M195,85 L195,150 C195,170 215,170 215,150" fill="none" stroke="#475569" stroke-width="5" stroke-linecap="round"/>
+    
+</svg>

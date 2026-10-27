@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" role="img" aria-label="Commercial Planetary Mixer (40L)">
+  <defs>
+    <!-- Studio Photography Neutral Gradient Background -->
+    <radialGradient id="studioBg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="65%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </radialGradient>
+    
+    <!-- Brushed Stainless Steel Gradient -->
+    <linearGradient id="steelGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="25%" stop-color="#E2E8F0"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="75%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+
+    <!-- Top Cap Stainless Gradient -->
+    <linearGradient id="steelTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+
+    <!-- Chrome & Polished Steel Reflection -->
+    <linearGradient id="chrome" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#94A3B8"/>
+      <stop offset="35%" stop-color="#FFFFFF"/>
+      <stop offset="65%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+
+    <!-- Dark Metal Chassis -->
+    <linearGradient id="metalDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Precision Control Knob Gradient -->
+    <radialGradient id="knobGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </radialGradient>
+
+    <!-- Amber Brand Highlight -->
+    <linearGradient id="amberAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <!-- Realistic Soft Drop Shadow Filter -->
+    <filter id="shadowBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+
+  <!-- Pure White Studio Background (#FFFFFF) matching real catalog photography -->
+  <rect width="400" height="300" fill="#FFFFFF"/>
+
+  <!-- Product Vector Rendering -->
+  
+      <ellipse cx="200" cy="248" rx="115" ry="12" fill="#0F172A" opacity="0.12"/>
+      <!-- Heavy Cast Iron Column & Base -->
+      <path d="M150,240 L250,240 L240,110 L260,110 L265,55 L135,55 L140,110 L160,110 Z" fill="url(#steelGrad)" stroke="#475569" stroke-width="1.5"/>
+      <!-- Mixer Top Gear Head -->
+      <rect x="135" y="55" width="130" height="45" rx="6" fill="url(#steelTop)" stroke="#334155" stroke-width="1.5"/>
+      <!-- Speed Shift Lever & Buttons -->
+      <rect x="245" y="65" width="14" height="25" rx="3" fill="#DC2626"/>
+      <circle cx="150" cy="75" r="5" fill="#10B981" stroke="#064E3B" stroke-width="1"/>
+      <circle cx="165" cy="75" r="5" fill="#EF4444" stroke="#7F1D1D" stroke-width="1"/>
+
+      <!-- Stainless Bowl (40L) -->
+      <path d="M150,145 C150,210 250,210 250,145 Z" fill="url(#chrome)" stroke="#475569" stroke-width="1.5"/>
+      <!-- Bowl Rim -->
+      <ellipse cx="200" cy="145" rx="50" ry="10" fill="url(#steelTop)" stroke="#64748B" stroke-width="1.5"/>
+      <!-- Wire Safety Guard -->
+      <g stroke="#94A3B8" stroke-width="1.2">
+        <line x1="160" y1="100" x2="160" y2="145"/>
+        <line x1="175" y1="100" x2="175" y2="145"/>
+        <line x1="190" y1="100" x2="190" y2="145"/>
+        <line x1="205" y1="100" x2="205" y2="145"/>
+        <line x1="220" y1="100" x2="220" y2="145"/>
+        <line x1="235" y1="100" x2="235" y2="145"/>
+      </g>
+      <!-- Bowl Lift Crank Wheel -->
+      <circle cx="135" cy="140" r="10" fill="url(#knobGrad)" stroke="#334155" stroke-width="1.5"/>
+    
+</svg>

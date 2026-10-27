@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" role="img" aria-label="Vegetable Prep Machine">
+  <defs>
+    <!-- Studio Photography Neutral Gradient Background -->
+    <radialGradient id="studioBg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="65%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </radialGradient>
+    
+    <!-- Brushed Stainless Steel Gradient -->
+    <linearGradient id="steelGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="25%" stop-color="#E2E8F0"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="75%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+
+    <!-- Top Cap Stainless Gradient -->
+    <linearGradient id="steelTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+
+    <!-- Chrome & Polished Steel Reflection -->
+    <linearGradient id="chrome" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#94A3B8"/>
+      <stop offset="35%" stop-color="#FFFFFF"/>
+      <stop offset="65%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+
+    <!-- Dark Metal Chassis -->
+    <linearGradient id="metalDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Precision Control Knob Gradient -->
+    <radialGradient id="knobGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </radialGradient>
+
+    <!-- Amber Brand Highlight -->
+    <linearGradient id="amberAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <!-- Realistic Soft Drop Shadow Filter -->
+    <filter id="shadowBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+
+  <!-- Pure White Studio Background (#FFFFFF) matching real catalog photography -->
+  <rect width="400" height="300" fill="#FFFFFF"/>
+
+  <!-- Product Vector Rendering -->
+  
+      <ellipse cx="200" cy="245" rx="110" ry="12" fill="#0F172A" opacity="0.12"/>
+      <!-- Angled Motor Base -->
+      <polygon points="130,235 270,235 250,120 150,120" fill="url(#steelGrad)" stroke="#475569" stroke-width="1.5"/>
+      <!-- Power Switch Panel -->
+      <rect x="180" y="195" width="40" height="25" rx="3" fill="#1E293B"/>
+      <circle cx="192" cy="207" r="5" fill="#10B981"/>
+      <circle cx="208" cy="207" r="5" fill="#EF4444"/>
+
+      <!-- Cutting Chamber & Ejection Chute -->
+      <rect x="135" y="100" width="130" height="35" rx="3" fill="url(#steelTop)" stroke="#334155" stroke-width="1.5"/>
+      <!-- Slanted Discharge Chute -->
+      <polygon points="120,135 155,135 140,165 110,165" fill="url(#chrome)" stroke="#64748B" stroke-width="1.2"/>
+
+      <!-- Dual Hopper Feed Head -->
+      <path d="M145,100 L145,55 L255,55 L255,100 Z" fill="url(#metalDark)" stroke="#334155" stroke-width="1.5"/>
+      <!-- Pusher Lever Handle -->
+      <path d="M165,55 L165,30 L220,30 L220,55" stroke="#CBD5E1" stroke-width="4" fill="none"/>
+      <rect x="185" y="24" width="30" height="10" rx="3" fill="#0F172A"/>
+      <!-- Round Feed Tube for Cucumbers/Carrots -->
+      <circle cx="235" cy="55" r="12" fill="#0F172A" stroke="#94A3B8" stroke-width="1.5"/>
+    
+</svg>

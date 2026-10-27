@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" role="img" aria-label="Modular Electric Deck Oven">
+  <defs>
+    <!-- Studio Photography Neutral Gradient Background -->
+    <radialGradient id="studioBg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="65%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </radialGradient>
+    
+    <!-- Brushed Stainless Steel Gradient -->
+    <linearGradient id="steelGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="25%" stop-color="#E2E8F0"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="75%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+
+    <!-- Top Cap Stainless Gradient -->
+    <linearGradient id="steelTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+
+    <!-- Chrome & Polished Steel Reflection -->
+    <linearGradient id="chrome" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#94A3B8"/>
+      <stop offset="35%" stop-color="#FFFFFF"/>
+      <stop offset="65%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+
+    <!-- Dark Metal Chassis -->
+    <linearGradient id="metalDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Precision Control Knob Gradient -->
+    <radialGradient id="knobGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </radialGradient>
+
+    <!-- Amber Brand Highlight -->
+    <linearGradient id="amberAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <!-- Realistic Soft Drop Shadow Filter -->
+    <filter id="shadowBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+
+  <!-- Pure White Studio Background (#FFFFFF) matching real catalog photography -->
+  <rect width="400" height="300" fill="#FFFFFF"/>
+
+  <!-- Product Vector Rendering -->
+  
+      <ellipse cx="200" cy="248" rx="135" ry="12" fill="#0F172A" opacity="0.12"/>
+      <!-- Main Outer Shell -->
+      <rect x="90" y="45" width="220" height="195" rx="4" fill="url(#steelGrad)" stroke="#64748B" stroke-width="1.5"/>
+      
+      <!-- Top Deck -->
+      <rect x="100" y="55" width="160" height="70" rx="3" fill="#0F172A" stroke="#475569" stroke-width="1.5"/>
+      <rect x="110" y="65" width="140" height="50" rx="2" fill="#78350F" opacity="0.8"/>
+      <!-- Glass Window with Stone Hearth Glow -->
+      <line x1="110" y1="105" x2="250" y2="105" stroke="#F59E0B" stroke-width="2"/>
+      <!-- Deck Handle -->
+      <rect x="125" y="117" width="110" height="5" rx="2.5" fill="url(#chrome)"/>
+      <!-- Top Deck Controls (Right) -->
+      <rect x="268" y="55" width="34" height="70" rx="2" fill="#1E293B"/>
+      <circle cx="285" cy="72" r="5" fill="#D97706"/>
+      <circle cx="285" cy="90" r="5" fill="#D97706"/>
+
+      <!-- Bottom Deck -->
+      <rect x="100" y="140" width="160" height="70" rx="3" fill="#0F172A" stroke="#475569" stroke-width="1.5"/>
+      <rect x="110" y="150" width="140" height="50" rx="2" fill="#78350F" opacity="0.8"/>
+      <line x1="110" y1="190" x2="250" y2="190" stroke="#F59E0B" stroke-width="2"/>
+      <!-- Deck Handle -->
+      <rect x="125" y="202" width="110" height="5" rx="2.5" fill="url(#chrome)"/>
+      <!-- Bottom Deck Controls -->
+      <rect x="268" y="140" width="34" height="70" rx="2" fill="#1E293B"/>
+      <circle cx="285" cy="157" r="5" fill="#D97706"/>
+      <circle cx="285" cy="175" r="5" fill="#D97706"/>
+
+      <!-- Legs -->
+      <rect x="105" y="240" width="16" height="12" rx="2" fill="url(#steelTop)"/>
+      <rect x="279" y="240" width="16" height="12" rx="2" fill="url(#steelTop)"/>
+    
+</svg>

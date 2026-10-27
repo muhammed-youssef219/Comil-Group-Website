@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%" role="img" aria-label="Double-Well Commercial Fryer">
+  <defs>
+    <!-- Studio Photography Neutral Gradient Background -->
+    <radialGradient id="studioBg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="65%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </radialGradient>
+    
+    <!-- Brushed Stainless Steel Gradient -->
+    <linearGradient id="steelGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="25%" stop-color="#E2E8F0"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="75%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+
+    <!-- Top Cap Stainless Gradient -->
+    <linearGradient id="steelTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+
+    <!-- Chrome & Polished Steel Reflection -->
+    <linearGradient id="chrome" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#94A3B8"/>
+      <stop offset="35%" stop-color="#FFFFFF"/>
+      <stop offset="65%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+
+    <!-- Dark Metal Chassis -->
+    <linearGradient id="metalDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Precision Control Knob Gradient -->
+    <radialGradient id="knobGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </radialGradient>
+
+    <!-- Amber Brand Highlight -->
+    <linearGradient id="amberAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <!-- Realistic Soft Drop Shadow Filter -->
+    <filter id="shadowBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+
+  <!-- Pure White Studio Background (#FFFFFF) matching real catalog photography -->
+  <rect width="400" height="300" fill="#FFFFFF"/>
+
+  <!-- Product Vector Rendering -->
+  
+      <ellipse cx="200" cy="245" rx="120" ry="12" fill="#0F172A" opacity="0.12"/>
+      <!-- Body -->
+      <rect x="110" y="65" width="180" height="175" rx="4" fill="url(#steelGrad)" stroke="#64748B" stroke-width="1.5"/>
+      <!-- Rear Splash Guard -->
+      <rect x="110" y="45" width="180" height="22" rx="2" fill="url(#steelTop)" stroke="#475569" stroke-width="1"/>
+      
+      <!-- Dual Fry Tanks -->
+      <rect x="122" y="70" width="72" height="65" rx="2" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+      <rect x="206" y="70" width="72" height="65" rx="2" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+      
+      <!-- Fry Baskets with Wire Mesh Pattern -->
+      <rect x="126" y="75" width="64" height="50" rx="2" fill="#D97706" opacity="0.3" stroke="#CBD5E1" stroke-width="1"/>
+      <rect x="210" y="75" width="64" height="50" rx="2" fill="#D97706" opacity="0.3" stroke="#CBD5E1" stroke-width="1"/>
+      <!-- Basket Wire Grid -->
+      <g stroke="#94A3B8" stroke-width="1" stroke-dasharray="2,2">
+        <line x1="126" y1="85" x2="190" y2="85"/>
+        <line x1="126" y1="95" x2="190" y2="95"/>
+        <line x1="126" y1="105" x2="190" y2="105"/>
+        <line x1="210" y1="85" x2="274" y2="85"/>
+        <line x1="210" y1="95" x2="274" y2="95"/>
+        <line x1="210" y1="105" x2="274" y2="105"/>
+      </g>
+      <!-- Upward Handles with Red Grip -->
+      <path d="M158,75 L158,35 L170,30" stroke="#CBD5E1" stroke-width="3" fill="none"/>
+      <rect x="165" y="26" width="22" height="8" rx="3" fill="#DC2626"/>
+      <path d="M242,75 L242,35 L254,30" stroke="#CBD5E1" stroke-width="3" fill="none"/>
+      <rect x="249" y="26" width="22" height="8" rx="3" fill="#DC2626"/>
+
+      <!-- Lower Oil Drain Cabinet Doors -->
+      <rect x="120" y="145" width="76" height="85" rx="2" fill="url(#metalDark)" stroke="#475569" stroke-width="1"/>
+      <rect x="204" y="145" width="76" height="85" rx="2" fill="url(#metalDark)" stroke="#475569" stroke-width="1"/>
+      <!-- Door Handles -->
+      <circle cx="188" cy="180" r="4" fill="url(#chrome)"/>
+      <circle cx="212" cy="180" r="4" fill="url(#chrome)"/>
+
+      <!-- Thermostat Dials on Upper Facia -->
+      <circle cx="158" cy="138" r="5" fill="#D97706" stroke="#FEF3C7" stroke-width="1"/>
+      <circle cx="242" cy="138" r="5" fill="#D97706" stroke="#FEF3C7" stroke-width="1"/>
+      <!-- Legs -->
+      <rect x="120" y="240" width="14" height="12" rx="2" fill="url(#steelTop)"/>
+      <rect x="266" y="240" width="14" height="12" rx="2" fill="url(#steelTop)"/>
+    
+</svg>
